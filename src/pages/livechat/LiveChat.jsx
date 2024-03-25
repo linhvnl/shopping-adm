@@ -58,6 +58,8 @@ const LiveChat = (props) => {
     // load rooms
     socket.on("load_rooms", (rooms) => {
       setAllRooms(rooms);
+      setActiveRoom({});
+      setRoomId("");
     });
 
     // join room
